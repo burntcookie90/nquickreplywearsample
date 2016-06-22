@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         Notification notification = new NotificationCompat.Builder(this)
             .extend(wearableExtender)
             .setSmallIcon(R.mipmap.ic_launcher)
+            .setContentTitle("Title")
+            .setContentText("Text")
             .build();
 
         NotificationManagerCompat.from(this)
